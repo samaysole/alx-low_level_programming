@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
 /**
  * main - main block
@@ -21,7 +20,6 @@ int main(void)
 		}
                 n++;
         }
-
         putchar('\n');
         return (0);
 }
