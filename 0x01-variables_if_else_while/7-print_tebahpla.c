@@ -3,8 +3,8 @@
 #include <time.h>
 /**
  * main - main block
- * Description: Print all lowercase alphabets in reverse 
- * followed by a new line
+ * Description: Print all lowercase alphabets in reverse
+ * followed by a new line.
  * Return: 0
  */
 int main(void)
