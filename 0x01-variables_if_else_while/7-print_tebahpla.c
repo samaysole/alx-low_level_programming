@@ -5,7 +5,7 @@
  * main - main block
  * Description: Print all lowercase alphabets in reverse 
  * followed by a new line
- * Return": 0
+ * Return: 0
  */
 int main(void)
 {
