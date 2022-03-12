@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-        int n = 0 ;
-
-        while (n < 16)
-        {
+	int n = 0;
+	
+	while (n < 16)
+	{
 		if (n < 10)
 		{
 			putchar(48 + n);
@@ -20,7 +20,6 @@ int main(void)
 		}
 		n++;
 	}
-
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 }
