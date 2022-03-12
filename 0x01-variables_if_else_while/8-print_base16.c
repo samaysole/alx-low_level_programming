@@ -6,8 +6,7 @@
  */
 int main(void)
 {
-	int n = 0;
-	
+	int n = 0;	
 	while (n < 16)
 	{
 		if (n < 10)
