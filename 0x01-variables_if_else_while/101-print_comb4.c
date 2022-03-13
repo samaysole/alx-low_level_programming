@@ -3,8 +3,8 @@
 /**
  * main - main block
  * Description: prints all possible different combinations of three digits
- * starting from 012-789 considering "012,120,102,021,201,210" are  considered 
- * as same and finally followed by a new line.
+ * starting from 012-789 -"012,120,102,021,201,210" are considered as same
+ * and finally followed by a new line.
  * Return: 0
  */
 int main(void)
