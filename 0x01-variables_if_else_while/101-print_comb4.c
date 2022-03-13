@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int n,m,o;
+	int n, m, o;
 	
 	n = 0;
 	while (n < 8)
