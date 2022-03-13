@@ -17,13 +17,13 @@ int main(void)
 		m = 0;
 		while (m < 10)
 		{
-			n = 0;
+			n = l;
 			while (n < 10)
 			{
-				o = 0;
+				o = m;
 				while (o < 10)
 				{
-					if (!(l == n && o == m))
+					if (!(l == n && o == m)&&(l == o && m == n))
 					{
 						putchar(48 + l);
 						putchar(48 + m);
