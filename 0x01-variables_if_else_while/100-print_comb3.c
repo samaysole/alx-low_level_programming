@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * main - main block
- * Description: prints all single digit numbers of base 10
- * starting from 0, followed by a new line.
+ * Description: prints all possible different combinations of two digits
+ * starting from 01-89 considering "01 & 10" as same followed by a new line.
  * Return: 0
  */
 int main(void)
