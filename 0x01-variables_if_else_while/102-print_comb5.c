@@ -17,10 +17,10 @@ int main(void)
 		m = 0;
 		while (m < 10)
 		{
-			n = l + 1;
+			n = 0;
 			while (n < 10)
 			{
-				o = m + 1;
+				o = 0;
 				while (o < 10)
 				{
 					if (!(l == n && o == m) && (l == o && m == n))
