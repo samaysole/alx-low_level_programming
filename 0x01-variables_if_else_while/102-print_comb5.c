@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * main - main block
- * Description: prints all possible different combinations of two two 
+ * Description: prints all possible different combinations of two two
  * digits starting from 00 01 - 98 99 - "00 01 and 01 00" are considered
  * as same numbers of 0 and 1 and finally followed by a new line.
  * Return: 0
@@ -31,7 +31,7 @@ int main(void)
 						putchar(48 + n);
 						putchar(48 + o);
 
-						if ( l + m + n + o != 35)
+						if ( (l + m + n + o) != 35)
 						{
 							putchar(',');
 							putchar(' ');
