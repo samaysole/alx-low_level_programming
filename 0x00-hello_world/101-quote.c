@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int n;
+	unsigned int n;
 	char ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
 	n = 0;
