@@ -31,7 +31,7 @@ int main(void)
 						putchar(48 + n);
 						putchar(48 + o);
 
-						if ( (l + m + n + o) != 35)
+						if ((l + m != 17) && (n + o != 18))
 						{
 							putchar(',');
 							putchar(' ');
