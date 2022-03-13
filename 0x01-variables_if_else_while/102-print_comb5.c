@@ -23,7 +23,7 @@ int main(void)
 				o = 0;
 				while (o < 10)
 				{
-					if (!(l == n && o == m) && (l == o && m == n))
+					if (!(l == n && o == m))
 					{
 						putchar(48 + l);
 						putchar(48 + m);
