@@ -10,6 +10,7 @@ int main(void)
 {
 	int m;
 	int n;
+
 	n = 0;
 
 	while (n < 9)
