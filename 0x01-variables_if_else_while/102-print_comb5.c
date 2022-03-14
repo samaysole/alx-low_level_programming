@@ -30,7 +30,6 @@ int main(void)
 						putchar(' ');
 						putchar(48 + n);
 						putchar(48 + o);
-
 						if ((l + m != 17) && (n + o != 18))
 						{
 							putchar(',');
