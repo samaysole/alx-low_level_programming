@@ -20,20 +20,30 @@ int main(void)
 			n = 0;
 			while (n < 10)
 			{
-				o = 0;
+				if (n == 0)
+				{
+					o = 1;
+				}
+				else 
+				{
+					o = 0;
+				}
 				while (o < 10)
 				{
-					if (!(l == n && o == m))
+					if ((l + m < n + o) && (l <= n))
 					{
-						putchar(48 + l);
-						putchar(48 + m);
-						putchar(' ');
-						putchar(48 + n);
-						putchar(48 + o);
-						if ((l + m != 17) && (n + o != 18))
+						if (!(l == n && o == m))
 						{
-							putchar(',');
+							putchar(48 + l);
+							putchar(48 + m);
 							putchar(' ');
+							putchar(48 + n);
+							putchar(48 + o);
+							if ((l + m != 17) || (n + o != 18))
+							{
+								putchar(',');
+								putchar(' ');
+							}
 						}
 					}
 					o++;
