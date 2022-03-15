@@ -7,14 +7,14 @@
  **/
 int main(void)
 {
-	int str[]= {95, 112, 117, 116, 99, 104, 97, 114}
-	int c, s;
-
-	s = sizeof(str) / sizeof(int);
-
-	for (c = 0; c < s; c++)
+	char c[8] = "_putchar";
+	int n;
+	
+	n = 0;
+	while (n < 9)
 	{
-		_putchar(str[c]);
+		_putchar(c[n]);
+		n++;
 	}
 	_putchar('\n');
 	return (0);
