@@ -2,6 +2,7 @@
 
 /**
  * print_last_digit - prints the last digit from the given value
+ * @num: the number
  * Return: last digit
  */
 
@@ -13,11 +14,11 @@ int print_last_digit(int num)
 	if (l < 0)
 	{
 		_putchar(-l + 48);
-		return (l);
+		return (-l);
 	}
 	else
 	{
 		_putchar(l + 48);
-		return l;
+		return (l);
 	}
 }
