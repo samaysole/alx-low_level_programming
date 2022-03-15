@@ -5,7 +5,7 @@
  * in lowercases 10 times and followed with new line.
  * */
 
-void print_alphabet_10x(void)
+void print_alphabet_x10(void)
 {
 	int x, i;
 
