@@ -14,7 +14,6 @@ int main(void)
        for (n = 0; n < s; n++)
        {
 	       _putchar(c[n]);
-	       n++;
        }
        _putchar('\n');
        return (0);
