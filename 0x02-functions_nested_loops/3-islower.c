@@ -2,8 +2,7 @@
 
 /**
  * _islower - shows 1 if the given character is
- * lowercase. another cases, shows 0
- *  
+ * lowercase. another cases, shows 0  
  * @c: The character in ASCII code
  *
  * Returns:1 for lowercase character. 0 for another.
@@ -21,4 +20,4 @@ int _islower(int c)
 		return (0);
 	}
 	_putchar('\n');
-}	
+}
