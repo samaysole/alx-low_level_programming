@@ -2,7 +2,6 @@
 
 /**
  * jack_bauer - display the minutes of a day
- * 
  * Return:0
  */
 
@@ -14,7 +13,7 @@ void jack_bauer(void)
 	{
 		for (v = 0; v <= 3; v++)
 		{
-			for (w = 0; w<= 5; w++)
+			for (w = 0; w <= 5; w++)
 			{
 				for (x = 0; x <= 9; x++)
 				{
