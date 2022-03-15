@@ -9,7 +9,6 @@ int main(void)
 {
 	char c[8] = "_putchar";
 	int n;
-	
 	n = 0;
 	while (n < 9)
 	{
