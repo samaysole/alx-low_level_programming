@@ -7,7 +7,7 @@
  **/
 int main(void)
 {
-       int c[] = "_putchar";
+       int c[] = { 95, 112, 117, 116, 99, 104, 97, 114};
        int n,s;
        
        s = sizeof(c) / sizeof(int);
