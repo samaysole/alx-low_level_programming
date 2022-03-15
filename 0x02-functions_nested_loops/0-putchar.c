@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,5 +7,15 @@
  **/
 int main(void)
 {
-	printf("_putchar\n");
+	int str[]= {95, 112, 117, 116, 99, 104, 97, 114}
+	int c, s;
+
+	s = sizeof(str) / sizeof(int);
+
+	for (c = 0; c < s; c++)
+	{
+		_putchar(str[c]);
+	}
+	_putchar('\n');
+	return (0);
 }
