@@ -7,9 +7,8 @@
 
 int main()
 {
-	int n, i;
-
-	n = 1024;
+	int i;
+	
 	for (i = 1; i < 1024; i++)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
