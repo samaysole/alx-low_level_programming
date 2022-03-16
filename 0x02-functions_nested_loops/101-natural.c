@@ -1,11 +1,12 @@
 #include <stdio.h>
 
-/* main : main blok that proints all the natural number
+/**
+ * main : main blok that proints all the natural number
  * of the sum of all mltiples of 3 & 5 below 1024
  * Return: 0 Always success
  */
 
-int main()
+int main(void)
 {
 	int sum, i;
 		
@@ -18,5 +19,5 @@ int main()
 		}
 	}
 	printf("%d\n", sum);
-	return 0;
+	return (0);
 }
