@@ -68,5 +68,5 @@ void print_to_98(int n)
 		_putchar(i % 10 + 48);
 	}
 	_putchar('\n');
-	return (0);
+	return 0;
 }
