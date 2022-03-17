@@ -3,21 +3,23 @@
 /**
  * print_most_numbers - print numbers
  * Description: print all numbers from 0 to 9
- * except 2 and 2.
+ * except 2 and 4.
  * Return: 0 always
  */
 
 void print_most_numbers(void)
 {
-	int i = 0;
+	char n = 0;
 
-	while (i <= 9)
+	while (n <= 9)
 	{
-		if(i != 2 && i != 4)
+		if (n != 2 && n != 4)
 		{
-			_putchar(48 + i);
+			_putchar('0' + n);
 		}
-		i++;
+
+		n++;
 	}
 	_putchar('\n');
+
 }
