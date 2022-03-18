@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * more_numbers - print numbers
- * Description: print all numbers from 0 to 14.
- * Return: 0 always
+ * more_numbers - prints more numbers
+ * Return:void
  */
 
 void more_numbers(void)
@@ -30,4 +29,4 @@ void more_numbers(void)
 		i++;
 	}
 
-}			
+}
