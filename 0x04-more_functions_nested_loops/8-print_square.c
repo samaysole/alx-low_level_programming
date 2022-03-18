@@ -6,17 +6,24 @@
  * Return:void
  */
 
-void print_square(int size)
+void print_square(int n)
 {
-	int r, c;
 
-	for (r = 0; r < size; r++)
+	int i = 0, ii;
+
+	while (i < n && n > 0)
 	{
-		for (c = 0; c < size; c++)
+		ii = 0;
+		while (ii < n)
 		{
-			_putchar(35);
+			_putchar('#');
+			ii++;
 		}
-		putchar('\n');
+
+		_putchar('\n');
+		i++;
 	}
-	putchar('\n');
+	if (i == 0)
+		_putchar('\n');
+
 }
