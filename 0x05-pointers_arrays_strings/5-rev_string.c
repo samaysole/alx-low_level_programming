@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-coid rev_string(char *s)
+void rev_string(char *s)
 {
 	int c = 0, i, j;
 	char *str, temp;
