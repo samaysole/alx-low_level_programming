@@ -25,6 +25,5 @@ char *_strncat(char *dest, char *src, int n)
 		c++;
 		c2++;
 	}
-
 	return (dest);
 }
