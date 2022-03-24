@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strncat - concatenates two strings
  * @dest: destination
@@ -7,7 +6,6 @@
  * @n: amount of bytes from src
  * Return: pointer to the resulting string dest
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int c = 0, c2 = 0;
