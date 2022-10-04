@@ -1,57 +1,58 @@
-#include "search_algos.h"
+/**
+ * print_array - Prints the contents of an array.
+ * @array: The source of the array to print.
+ * @l: The left index of the array.
+ * @r: The right index of the array.
+ */
+void print_array(int *array, size_t l, size_t r)
+{
+	size_t i;
+
+	if (array)
+	{
+		printf("Searching in array: ");
+		for (i = l; i < l + (r - l + 1); i++)
+			printf("%d%s", *(array + i), i < l + (r - l) ? ", " : "\n");
+	}
+}
 
 /**
- * binary_search - binary search implementation
- * @array: string
- * @size: size_t
- * @value: value
- * Return: int, index of the value
+ * binary_search_index - Searches a value in a sorted array using \
+ * a binary search.
+ * @array: The array to search in.
+ * @l: The left index of the array.
+ * @r: The right index of the array.
+ * @value: The value to look for.
+ *
+ * Return: The first index of the value in the array, otherwise -1.
  */
+int binary_search_index(int *array, size_t l, size_t r, int value)
+{
+	size_t m;
 
+	if (!array)
+		return (-1);
+	print_array(array, l, r);
+	m = l + ((r - l) / 2);
+	if (l == r)
+		return (*(array + m) == value ? (int)m : -1);
+	if (value < *(array + m))
+		return (binary_search_index(array, l, m - 1, value));
+	else if (value == *(array + m))
+		return ((int)m);
+	else
+		return (binary_search_index(array, m + 1, r, value));
+}
+
+/**
+ * binary_search - Searches a value in a sorted array using a binary search.
+ * @array: The array to search in.
+ * @size: The length of the array.
+ * @value: The value to look for.
+ *
+ * Return: The index of the value in the array, otherwise -1.
+ */
 int binary_search(int *array, size_t size, int value)
 {
-size_t i;
-int left = 0;
-int right = size;
-int middle;
-if (array == NULL)
-	return (-1);
-
-for (i = 0; left < right; i++)
-{
-	printf("Searching in array: ");
-	print_array(array, left, right);
-	middle = (left + right) / 2;
-
-	if (array[middle] < value)
-		left = middle + 1;
-	else if (array[middle] > value)
-		right = middle;
-	else
-		return (middle);
-}
-return (-1);
-}
-
-
-/**
- * print_array - print `n` elements of an array of integers
- * @a: int array pointer to print
- * @i: int, start index
- * @j: int, end index
- * Description: Numbers must be separated by comma and space.
- * Numbers should be displayed in the same order they are stored in array.
- * You can only use _putchar to print.
- */
-
-void print_array(int *a, int i, int j)
-{
-
-	for (; i < j; i++)
-	{
-		printf("%d", a[i]);
-		if (i < j - 1)
-			printf(", ");
-	}
-	printf("\n");
+	return (binary_search_index(array, 0, size - 1, value));
 }
