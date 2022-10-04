@@ -1,3 +1,5 @@
+#include "search_algos.h"
+
 /**
  * print_array - Prints the contents of an array.
  * @array: The source of the array to print.
